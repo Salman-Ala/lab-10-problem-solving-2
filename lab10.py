@@ -40,7 +40,6 @@ def eval_rpn(tokens):
             a = stack.pop()
             stack.append(int(a / b))
         else:
-            # it must be a number
             stack.append(int(token))
 
     return stack[0]
